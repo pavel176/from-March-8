@@ -1,0 +1,43 @@
+@import "reset.scss";
+
+body {
+	background-image: radial-gradient(
+		circle farthest-corner at 10.2% 55.8%,
+		rgba(252, 37, 103, 1) 0%,
+		rgba(250, 38, 151, 1) 46.2%,
+		rgba(186, 8, 181, 1) 90.1%
+	);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+	color: #fff;
+
+	display: grid;
+	grid-template-rows: 90px 1fr 90px;
+}
+
+.bg-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40vw;
+	color: #0002;
+	z-index: -1;
+}
+
+.full-screen {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 200%;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
